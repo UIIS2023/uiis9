@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+body{
+    background-color: rgba(151, 151, 150, 0.993);
+}
+
+.klasa{
+    color:white;
+    text-decoration: none;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+.navbar a:hover:before{
+    width:100%;
+}
+
+h3{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.text-box h4{
+    font-size: 50px;
+    text-align: center;
+    color:transparent;
+    -webkit-text-stroke: 1px black;
+    background: url('back.png');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.div1{
+    float:left;
+    padding-left: 210px;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.div2{
+    float: left;
+    padding-left: 210px;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.div3{
+    float:right;
+    padding-right: 210px;
+    margin-top: 3%;
+    text-align: center;
+}
+fieldset{
+    display: block;
+    background-color: rgba(85, 85, 85, 0.829);
+    padding-top: 20px;
+    width: 350px;
+    height: 300px;
+    overflow: auto;
+    border-radius: 5%;
+    font-size: 19px;
+}
+legend{
+    text-align: center;
+    font-size: 25px;
+}
+.p2{
+    margin-top: 25%;
+    padding-top: 10px;
+    font-size: 23px;
+    text-align: center;
+    padding-bottom: 19px;
+}
+
+.sp{
+    padding-bottom: 14px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+table,tr,td{
+    border:2px solid black;
+    border-collapse: collapse;
+    margin:auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkgrey;
+    
+}
+th{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.red{
+    background-color: rgba(197, 196, 196, 0.774);
+}
+
+.pp{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 20px;
+}
+
+
+.box{
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 700px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 330%;
+    background-color: white;
+    box-shadow: 0 0 20px  rgb(8, 8, 8);
+    animation: animate 8s linear infinite;
+
+}
+
+.box::after{
+    content:' 1.Predsednik Instituta radio inženjera 1917, SAD 2.Predsednik Američkog instituta inženjera elektrotehnike 1925-1926. 3.Predsednik Američkog društva za unapređenje nauke 4.Predsednik Njujorške akademije nauka 5.Član Francuske akademije nauka 6.Član Srpske kraljevske akademije';
+    position: absolute;
+    inset: 10px;
+    background-color: rgba(151, 151, 150, 0.993);
+    border-radius: 16px;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.gl{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    
+}
+
+.container{
+    width: 500px;
+    height: 430px;
+    background: black;
+    display: block;
+    margin:auto ;
+}
+
+.swiper{
+    width: 500px;
+    height: fit-content;
+
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 430px;
+}
